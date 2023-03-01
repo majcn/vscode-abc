@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import * as abc from 'abc2svg/abc2svg-1'
+import * as abc from 'abc2svg/abc2svg-1';
 import * as path from 'path';
 
 let diagnosticCollection: vscode.DiagnosticCollection;
@@ -175,7 +175,7 @@ function getWebviewContent(
 		abcEngine.tosvg('song', currentContent);
 		characterOffset += currentContent.length;
 		
-	} catch (error) {
+	} catch (error: any) {
 		vscode.window.showErrorMessage(error.message);
 	}
 	
