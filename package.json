@@ -4,7 +4,7 @@
 	"description": "Syntax highlighting, live preview and print support for ABC Music Notation.",
 	"version": "0.4.0",
 	"engines": {
-		"vscode": "^1.44.0"
+		"vscode": "^1.75.1"
 	},
 	"icon": "images/icon.png",
 	"author": {
@@ -34,7 +34,7 @@
 			{
 				"command": "abc-music.print",
 				"title": "Print"
-			}			
+			}
 		],
 		"languages": [
 			{
@@ -77,19 +77,20 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"dependencies": {
-		"abc2svg": "1.20.10"
+		"abc2svg": "1.22.1"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.44.0",
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^7.0.2",
-		"@types/node": "^13.11.0",
-		"eslint": "^6.8.0",
-		"@typescript-eslint/parser": "^2.30.0",
-		"@typescript-eslint/eslint-plugin": "^2.30.0",
-		"glob": "^7.1.6",
-		"mocha": "^7.1.2",
-		"typescript": "^3.8.3",
+		"@types/glob": "^8.1.0",
+		"@types/mocha": "^10.0.1",
+		"@types/node": "^18.14.2",
+		"@types/vscode": "^1.75.1",
+		"@typescript-eslint/eslint-plugin": "^5.54.0",
+		"@typescript-eslint/parser": "^5.54.0",
+		"esbuild": "^0.17.10",
+		"eslint": "^8.35.0",
+		"glob": "^9.0.2",
+		"mocha": "^10.2.0",
+		"typescript": "^4.9.5",
 		"vscode-test": "^1.3.0"
 	}
 }
